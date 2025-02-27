@@ -15,7 +15,7 @@ describe('Edit Answer', () => {
     inMemoryAnswerAttachmentsRepository =
       new InMemoryAnswerAttachmentsRepository()
     inMemoryAnswersRepository = new InMemoryAnswersRepository(
-      InMemoryAnswerAttachmentsRepository,
+      inMemoryAnswerAttachmentsRepository,
     )
 
     sut = new EditAnswerUseCase(
